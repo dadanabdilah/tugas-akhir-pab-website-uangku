@@ -1,7 +1,7 @@
 
 
 # UANGKU - Website Catatan Keuangan
-Projek ini adalah API dari project [APLIKASI UANGKU](https://github.com/dadanabdilah/tugas-akhir-pab-aplikasi-uangku) dan project ini dibuat bertujuan untuk memenuhi tugas akhir Matakuliah Pemrograman Aplikasi Bergerak.
+Projek ini adalah API dari project [APLIKASI UANGKU](https://github.com/dadanabdilah/tugas-akhir-pab-aplikasi-uangku) dan project ini dibuat bertujuan untuk memenuhi tugas akhir Matakuliah Pemrograman Aplikasi Bergerak. Projek ini juga dibangun dengan menggunakan bahasa pemrograman PHP dan database MySQL.
 ## Konfigurasi
 
 1. **Setting Database**:
