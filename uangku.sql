@@ -29,10 +29,10 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `kategori` (
   `id` int NOT NULL,
-  `kategori` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `jenis` enum('Uang_Masuk','Uang_Keluar') CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `kategori` varchar(100),
+  `jenis` enum('Uang_Masuk','Uang_Keluar'),
   `id_pengguna` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB;
 
 -- --------------------------------------------------------
 
@@ -43,12 +43,12 @@ CREATE TABLE `kategori` (
 CREATE TABLE `keuangan` (
   `id` int NOT NULL,
   `nominal` int NOT NULL,
-  `jenis` enum('Uang_Masuk','Uang_Keluar') CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `jenis` enum('Uang_Masuk','Uang_Keluar'),
   `id_rekening` int NOT NULL,
   `id_kategori` int NOT NULL,
   `keterangan` varchar(128) NOT NULL,
   `tanggal` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB;
 
 -- --------------------------------------------------------
 
@@ -61,8 +61,8 @@ CREATE TABLE `pengguna` (
   `nama_pengguna` varchar(128) NOT NULL,
   `email` varchar(128) NOT NULL,
   `password` varchar(128) NOT NULL,
-  `jabatan` enum('Admin','Customer') CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `jabatan` enum('Admin','Customer')
+) ENGINE=InnoDB;
 
 --
 -- Dumping data for table `pengguna`
@@ -79,10 +79,10 @@ INSERT INTO `pengguna` (`id`, `nama_pengguna`, `email`, `password`, `jabatan`) V
 
 CREATE TABLE `rekening` (
   `id` int NOT NULL,
-  `rekening` varchar(25) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `rekening` varchar(25),
   `saldo` int NOT NULL,
   `id_pengguna` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB;
 
 --
 -- Indexes for dumped tables
